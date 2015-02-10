@@ -1,0 +1,40 @@
+{
+  "name": "react-canvas",
+  "version": "0.0.1",
+  "description": "High performance <canvas> rendering for React components",
+  "main": "lib/ReactCanvas.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flipboard/react-canvas.git"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/gulp"
+  },
+  "keywords": [
+    "react",
+    "canvas"
+  ],
+  "author": "Michael Johnston <mj@flipboard.com>",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/Flipboard/react-canvas",
+  "bugs": {
+    "url": "https://github.com/Flipboard/react-canvas/issues"
+  },
+  "devDependencies": {
+    "react": "^0.13.0-beta.1",
+    "webpack": "^1.5.3",
+    "transform-loader": "^0.2.1",
+    "envify": "^3.2.0",
+    "jsx-loader": "^0.12.2",
+    "gulp": "^3.8.10",
+    "gulp-connect": "^2.2.0",
+    "gulp-webpack": "^1.2.0",
+    "gulp-clean": "^0.3.1"
+  },
+  "peerDependencies": {
+    "react": "^0.13.0-beta.1"
+  },
+  "dependencies": {
+    "scroller": "git://github.com/mjohnston/scroller"
+  }
+}
