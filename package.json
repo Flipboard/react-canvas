@@ -21,15 +21,16 @@
     "url": "https://github.com/Flipboard/react-canvas/issues"
   },
   "devDependencies": {
-    "react": "^0.13.0-beta.1",
-    "webpack": "^1.5.3",
-    "transform-loader": "^0.2.1",
     "envify": "^3.2.0",
-    "jsx-loader": "^0.12.2",
     "gulp": "^3.8.10",
-    "gulp-connect": "^2.2.0",
+    "gulp-clean": "^0.3.1",
     "gulp-webpack": "^1.2.0",
-    "gulp-clean": "^0.3.1"
+    "jsx-loader": "^0.12.2",
+    "react": "^0.13.0-beta.1",
+    "react-hot-loader": "^1.1.4",
+    "transform-loader": "^0.2.1",
+    "webpack": "^1.5.3",
+    "webpack-dev-server": "^1.7.0"
   },
   "peerDependencies": {
     "react": "^0.13.0-beta.1"

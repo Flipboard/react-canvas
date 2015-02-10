@@ -59,4 +59,4 @@ var App = React.createClass({
 
 });
 
-React.render(<App />, document.getElementById('main'));
+module.exports = App;
