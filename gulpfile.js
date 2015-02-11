@@ -1,12 +1,11 @@
 var gulp = require('gulp');
-var clean = require('gulp-clean');
+var del = require('del');
 var connect = require('gulp-connect');
 var webpack = require('gulp-webpack');
 var webpackConfig = require('./webpack.config.js');
 
 gulp.task('clean', function () {
-  return gulp.src('build', {read: false})
-    .pipe(clean());
+  del(['build']);
 });
 
 gulp.task('build', function () {
