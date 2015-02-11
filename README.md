@@ -8,7 +8,7 @@ This project is a work-in-progress. Though much of the code is in production on 
 
 ## Motivation
 
-Having a long history of building interfaces geared toward mobile devices, we found that the reason mobile web apps feel slow when compared to native apps is the DOM. CSS animations and transitions are the fastest path to smooth animations on the web, but they have several limitiations. React Canvas leverages the fact that most modern mobile browsers now have hardware accelerated canvas.
+Having a long history of building interfaces geared toward mobile devices, we found that the reason mobile web apps feel slow when compared to native apps is the DOM. CSS animations and transitions are the fastest path to smooth animations on the web, but they have several limitations. React Canvas leverages the fact that most modern mobile browsers now have hardware accelerated canvas.
 
 While there have been other attempts to bind canvas drawing APIs to React, they are more focused on visualizations and games. Where React Canvas differs is in the focus on building application user interfaces. The fact that it renders to canvas is an implementation detail.
 
