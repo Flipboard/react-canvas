@@ -17,6 +17,7 @@ var Item = React.createClass({
     imageUrl: React.PropTypes.string.isRequired,
     title: React.PropTypes.string.isRequired,
     itemIndex: React.PropTypes.number.isRequired,
+    onClick: React.PropTypes.func
   },
 
   statics: {
@@ -25,9 +26,15 @@ var Item = React.createClass({
     }
   },
 
+  handleClick: function() {
+    if (this.props.onClick) {
+      this.props.onClick(this.props.title);
+    }
+  },
+
   render: function () {
     return (
-      <Group style={this.getStyle()}>
+      <Group style={this.getStyle()} onClick={this.handleClick}>
         <Image style={this.getImageStyle()} src={this.props.imageUrl} />
         <Text style={this.getTitleStyle()}>{this.props.title}</Text>
       </Group>
