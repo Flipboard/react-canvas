@@ -4,6 +4,9 @@ var connect = require('gulp-connect');
 var webpack = require('gulp-webpack');
 var webpackConfig = require('./webpack.config.js');
 
+var port = process.env.PORT || 8080;
+var reloadPort = process.env.RELOAD_PORT || 35729;
+
 gulp.task('clean', function () {
   del(['build']);
 });
@@ -16,7 +19,10 @@ gulp.task('build', function () {
 
 gulp.task('serve', function () {
   connect.server({
-    livereload: true
+    port: port,
+    livereload: {
+      port: reloadPort
+    }
   });
 });
 

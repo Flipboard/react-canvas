@@ -175,6 +175,6 @@ npm install
 npm start
 ```
 
-This will start a live reloading server on port 8080.
+This will start a live reloading server on port 8080. To override the default server and live reload ports, run `npm start` with PORT and/or RELOAD_PORT environment variables.
 
 **A note on NODE_ENV and React**: running the examples with `NODE_ENV=production` will noticeably improve scrolling performance. This is because React skips propType validation in production mode.
