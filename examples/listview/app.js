@@ -25,6 +25,10 @@ var App = React.createClass({
     );
   },
 
+  handleItemClick: function(title) {
+    console.log(title);
+  },
+
   renderItem: function (itemIndex, scrollTop) {
     var article = articles[itemIndex % articles.length];
       return (
@@ -33,6 +37,7 @@ var App = React.createClass({
         height={Item.getItemHeight()}
         imageUrl={article.imageUrl}
         title={article.title}
+        onClick={this.handleItemClick}
         itemIndex={itemIndex} />
     );
   },
