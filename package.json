@@ -8,7 +8,8 @@
     "url": "https://github.com/Flipboard/react-canvas.git"
   },
   "scripts": {
-    "start": "./node_modules/.bin/gulp"
+    "start": "./node_modules/.bin/gulp",
+    "test": "./node_modules/.bin/jest"
   },
   "keywords": [
     "react",
@@ -26,6 +27,7 @@
     "gulp": "^3.8.10",
     "gulp-connect": "^2.2.0",
     "gulp-webpack": "^1.2.0",
+    "jest-cli": "^0.2.2",
     "jsx-loader": "^0.12.2",
     "react": "^0.13.0-beta.1",
     "transform-loader": "^0.2.1",
