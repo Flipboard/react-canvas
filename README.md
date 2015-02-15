@@ -8,7 +8,7 @@ This project is a work-in-progress. Though much of the code is in production on 
 
 ## Motivation
 
-Having a long history of building interfaces geared toward mobile devices, we found that the reason mobile web apps feel slow when compared to native apps is the DOM. CSS animations and transitions are the fastest path to smooth animations on the web, but they have several limitiations. React Canvas leverages the fact that most modern mobile browsers now have hardware accelerated canvas.
+Having a long history of building interfaces geared toward mobile devices, we found that the reason mobile web apps feel slow when compared to native apps is the DOM. CSS animations and transitions are the fastest path to smooth animations on the web, but they have several limitations. React Canvas leverages the fact that most modern mobile browsers now have hardware accelerated canvas.
 
 While there have been other attempts to bind canvas drawing APIs to React, they are more focused on visualizations and games. Where React Canvas differs is in the focus on building application user interfaces. The fact that it renders to canvas is an implementation detail.
 
@@ -175,6 +175,11 @@ npm install
 npm start
 ```
 
-This will start a live reloading server on port 8080.
+This will start a live reloading server on port 8080. To override the default server and live reload ports, run `npm start` with PORT and/or RELOAD_PORT environment variables.
 
 **A note on NODE_ENV and React**: running the examples with `NODE_ENV=production` will noticeably improve scrolling performance. This is because React skips propType validation in production mode.
+
+## Contributing
+
+We welcome pull requests for bug fixes, new features, and improvements to React Canvas. Contributors to the main repository must accept Flipboard's Apache-style [Individual Contributor License Agreement (CLA)](https://docs.google.com/forms/d/1gh9y6_i8xFn6pA15PqFeye19VqasuI9-bGp_e0owy74/viewform) before any changes can be merged.
+
