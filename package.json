@@ -35,7 +35,7 @@
     "react": "^0.13.0-beta.1"
   },
   "dependencies": {
-    "linebreak": "^0.2.0",
+    "linebreak": "^0.3.0",
     "scroller": "git://github.com/mjohnston/scroller"
   }
 }
