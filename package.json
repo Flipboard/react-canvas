@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp",
-    "test": "jest"
+    "test": "./node_modules/.bin/jest"
   },
   "keywords": [
     "react",
