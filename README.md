@@ -66,6 +66,11 @@ an image until it is fully loaded and optionally fade it in on load.
 a column. Think of it like UITableView for the web. It leverages many of the
 same optimizations that make table views on iOS and list views on Android fast.
 
+### &lt;ScrollView&gt;
+
+**ScrollView** is a more general version of ListView. It has no snapping
+support but instead allows each item to have an individual height.
+
 ## Events
 
 React Canvas components support the same event model as normal React components. However, not all event types are currently supported.

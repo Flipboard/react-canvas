@@ -4,9 +4,10 @@ module.exports = {
   watch: true,
 
   entry: {
-    'listview': ['./examples/listview/app.js'],
-    'timeline': ['./examples/timeline/app.js'],
-    'css-layout': ['./examples/css-layout/app.js']
+    'listview'   : ['./examples/listview/app.js'],
+    'scrollview' : ['./examples/scrollview/app.js'],
+    'timeline'   : ['./examples/timeline/app.js'],
+    'css-layout' : ['./examples/css-layout/app.js']
   },
 
   output: {
