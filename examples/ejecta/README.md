@@ -2,7 +2,7 @@
 
 This is a fork of [React Canvas](https://github.com/flipboard/react-canvas) that demonstrates the ability for React Canvas applications to run as fully native iOS applications using [Ejecta](http://impactjs.com/ejecta).
 
-![Ejecta Demo](examples/ejecta/ejecta_demo.png)
+![Ejecta Demo](ejecta_demo.png)
 
 ## Running the demo
 
