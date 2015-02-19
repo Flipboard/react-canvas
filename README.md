@@ -38,6 +38,27 @@ React Canvas provides a set of standard React components that abstract the under
 
 **Image** is exactly what you think it is. However, it adds the ability to hide an image until it is fully loaded and optionally fade it in on load.
 
+### &lt;Gradient&gt;
+
+**Gradient** can be used to set the background of a group or surface. 
+```javascript
+  render() {
+    ...
+    return (
+      <Group style={this.getStyle()}>
+        <Gradient style={this.getGradientStyle()} 
+                  colorStops={this.getGradientColors()} />
+      </Group>
+    );
+  }
+  getGradientColors(){
+    return [
+      { color: "transparent", position: 0 },
+      { color: "#000", position: 1 }
+    ]
+  }
+``` 
+
 ### &lt;ListView&gt;
 
 **ListView** is a touch scrolling container that renders a list of elements in a column. Think of it like UITableView for the web. It leverages many of the same optimizations that make table views on iOS and list views on Android fast.
