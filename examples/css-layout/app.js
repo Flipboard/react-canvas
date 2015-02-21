@@ -23,7 +23,9 @@ var App = React.createClass({
           <Text style={this.getTitleStyle()}>
             Professor PuddinPop
           </Text>
-          <Image src='http://lorempixel.com/360/420/cats/1/' style={this.getImageStyle()} fadeIn={true} />
+          <Group style={this.getImageGroupStyle()}>
+            <Image src='http://lorempixel.com/360/420/cats/1/' style={this.getImageStyle()} fadeIn={true} />
+          </Group>
           <Text style={this.getExcerptStyle()}>
             With these words the Witch fell down in a brown, melted, shapeless mass and began to spread over the clean boards of the kitchen floor.  Seeing that she had really melted away to nothing, Dorothy drew another bucket of water and threw it over the mess.  She then swept it all out the door.  After picking out the silver shoe, which was all that was left of the old woman, she cleaned and dried it with a cloth, and put it on her foot again.  Then, being at last free to do as she chose, she ran out to the courtyard to tell the Lion that the Wicked Witch of the West had come to an end, and that they were no longer prisoners in a strange land.
           </Text>
@@ -51,10 +53,21 @@ var App = React.createClass({
     };
   },
 
-  getImageStyle: function () {
+  getImageGroupStyle: function () {
     return {
+      position: 'relative',
       flex: 1,
       backgroundColor: '#eee'
+    };
+  },
+
+  getImageStyle: function () {
+    return {
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      right: 0,
+      bottom: 0
     };
   },
 
