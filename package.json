@@ -37,6 +37,8 @@
     "react": "^0.13.0-beta.1"
   },
   "dependencies": {
-    "scroller": "git://github.com/mjohnston/scroller"
+    "scroller": "git://github.com/mjohnston/scroller",
+    "hypher": "0.2.3",
+    "hyphenation.en-us": "0.2.1"
   }
 }
