@@ -74,7 +74,7 @@ var App = React.createClass({
   getTitleStyle: function () {
     return {
       fontFace: FontFace('Georgia'),
-      fontSize: 18,
+      fontSize: 22,
       lineHeight: 28,
       height: 28,
       marginBottom: 10,
@@ -86,7 +86,7 @@ var App = React.createClass({
   getExcerptStyle: function () {
     return {
       fontFace: FontFace('Georgia'),
-      fontSize: 12,
+      fontSize: 17,
       lineHeight: 25,
       marginTop: 15,
       flex: 1,

@@ -91,7 +91,7 @@ var Page = React.createClass({
       top: this.getImageHeight() + CONTENT_INSET,
       left: CONTENT_INSET,
       width: this.props.width - 2 * CONTENT_INSET,
-      fontSize: 20,
+      fontSize: 22,
       lineHeight: 30,
       fontFace: FontFace('Avenir Next Condensed, Helvetica, sans-serif', null, {weight: 500})
     };
@@ -102,7 +102,7 @@ var Page = React.createClass({
       left: CONTENT_INSET,
       width: this.props.width - 2 * CONTENT_INSET,
       fontFace: FontFace('Georgia, serif'),
-      fontSize: 12,
+      fontSize: 15,
       lineHeight: 23
     };
   },
