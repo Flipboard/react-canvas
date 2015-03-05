@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     'listview': ['./examples/listview/app.js'],
     'timeline': ['./examples/timeline/app.js'],
+    'gradient': ['./examples/gradient/app.js'],
     'css-layout': ['./examples/css-layout/app.js']
   },
 
