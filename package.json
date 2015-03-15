@@ -34,7 +34,7 @@
     "webpack": "^1.5.3"
   },
   "peerDependencies": {
-    "react": "^0.13.0-beta.1"
+    "react": "^0.13.0"
   },
   "dependencies": {
     "scroller": "git://github.com/mjohnston/scroller"
