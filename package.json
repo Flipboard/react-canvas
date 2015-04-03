@@ -22,6 +22,7 @@
     "url": "https://github.com/Flipboard/react-canvas/issues"
   },
   "devDependencies": {
+    "brfs": "^1.4.0",
     "del": "^1.1.1",
     "envify": "^3.2.0",
     "gulp": "^3.8.10",
