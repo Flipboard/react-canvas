@@ -22,6 +22,7 @@
     "url": "https://github.com/Flipboard/react-canvas/issues"
   },
   "devDependencies": {
+    "brfs": "^1.4.0",
     "del": "^1.1.1",
     "envify": "^3.2.0",
     "gulp": "^3.8.10",
@@ -37,6 +38,7 @@
     "react": "^0.13.0"
   },
   "dependencies": {
+    "linebreak": "^0.3.0",
     "scroller": "git://github.com/mjohnston/scroller"
   }
 }
