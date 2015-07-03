@@ -35,7 +35,7 @@
     "webpack": "^1.5.3"
   },
   "peerDependencies": {
-    "react": "^0.13.0"
+    "react": "^0.13.0 || 0.14.0-beta1"
   },
   "dependencies": {
     "linebreak": "^0.3.0",
