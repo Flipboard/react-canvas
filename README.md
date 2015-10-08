@@ -4,7 +4,7 @@
 
 React Canvas adds the ability for React components to render to `<canvas>` rather than DOM.
 
-This project is a work-in-progress. Though much of the code is in production on flipboard.com, the React canvas bindings are relatively new and the API is subject to change.
+This project is a work-in-progress. Though much of the code is in production on [flipboard](flipboard.com), the React canvas bindings are relatively new and the API is subject to change.
 
 ## Motivation
 
