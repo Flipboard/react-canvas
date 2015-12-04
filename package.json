@@ -30,12 +30,12 @@
     "gulp-webpack": "^1.2.0",
     "jest-cli": "^0.2.2",
     "jsx-loader": "^0.12.2",
-    "react": "^0.13.0-beta.1",
+    "react": "^0.14.3",
     "transform-loader": "^0.2.1",
     "webpack": "^1.5.3"
   },
   "peerDependencies": {
-    "react": "^0.13.0"
+    "react": "^0.14.0"
   },
   "dependencies": {
     "linebreak": "^0.3.0",
