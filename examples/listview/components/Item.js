@@ -1,4 +1,4 @@
-/** @jsx React.DOM */
+/** React.DOM */
 
 'use strict';
 
@@ -20,12 +20,12 @@ var Item = React.createClass({
   },
 
   statics: {
-    getItemHeight: function () {
+    getItemHeight: function() {
       return 80;
     }
   },
 
-  render: function () {
+  render: function() {
     return (
       <Group style={this.getStyle()}>
         <Image style={this.getImageStyle()} src={this.props.imageUrl} />
@@ -34,7 +34,7 @@ var Item = React.createClass({
     );
   },
 
-  getStyle: function () {
+  getStyle: function() {
     return {
       width: this.props.width,
       height: Item.getItemHeight(),
@@ -42,7 +42,7 @@ var Item = React.createClass({
     };
   },
 
-  getImageStyle: function () {
+  getImageStyle: function() {
     return {
       top: 10,
       left: 10,
@@ -54,7 +54,7 @@ var Item = React.createClass({
     };
   },
 
-  getTitleStyle: function () {
+  getTitleStyle: function() {
     return {
       top: 32,
       left: 80,

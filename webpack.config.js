@@ -14,12 +14,14 @@ module.exports = {
   },
 
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'jsx-loader!transform/cacheable?envify' },
-    ],
-    postLoaders: [
-      { loader: "transform?brfs" }
-    ]
+    loaders: [{
+      test: /\.jsx?$/, // 扩展名
+      exclude: /(node_modules|bower_components)/, // 排除目录
+      loader: 'babel', // 加载器
+      query: {
+        presets: ['react', 'es2015'] // 包含的预置处理器
+      }
+    }]
   },
 
   resolve: {

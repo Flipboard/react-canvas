@@ -1,4 +1,4 @@
-/** @jsx React.DOM */
+/** React.DOM */
 
 var React = require('react');
 var ReactCanvas = require('react-canvas');
@@ -11,11 +11,11 @@ var FontFace = ReactCanvas.FontFace;
 
 var App = React.createClass({
 
-  componentDidMount: function () {
+  componentDidMount: function() {
     window.addEventListener('resize', this.handleResize, true);
   },
 
-  render: function () {
+  render: function() {
     var size = this.getSize();
     return (
       <Surface top={0} left={0} width={size.width} height={size.height} enableCSSLayout={true}>
@@ -37,11 +37,11 @@ var App = React.createClass({
   // Styles
   // ======
 
-  getSize: function () {
+  getSize: function() {
     return document.getElementById('main').getBoundingClientRect();
   },
 
-  getPageStyle: function () {
+  getPageStyle: function() {
     var size = this.getSize();
     return {
       position: 'relative',
@@ -53,7 +53,7 @@ var App = React.createClass({
     };
   },
 
-  getImageGroupStyle: function () {
+  getImageGroupStyle: function() {
     return {
       position: 'relative',
       flex: 1,
@@ -61,7 +61,7 @@ var App = React.createClass({
     };
   },
 
-  getImageStyle: function () {
+  getImageStyle: function() {
     return {
       position: 'absolute',
       left: 0,
@@ -71,7 +71,7 @@ var App = React.createClass({
     };
   },
 
-  getTitleStyle: function () {
+  getTitleStyle: function() {
     return {
       fontFace: FontFace('Georgia'),
       fontSize: 22,
@@ -83,7 +83,7 @@ var App = React.createClass({
     };
   },
 
-  getExcerptStyle: function () {
+  getExcerptStyle: function() {
     return {
       fontFace: FontFace('Georgia'),
       fontSize: 17,
@@ -97,7 +97,7 @@ var App = React.createClass({
   // Events
   // ======
 
-  handleResize: function () {
+  handleResize: function() {
     this.forceUpdate();
   }
 

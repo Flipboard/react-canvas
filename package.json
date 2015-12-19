@@ -22,23 +22,25 @@
     "url": "https://github.com/Flipboard/react-canvas/issues"
   },
   "devDependencies": {
-    "brfs": "^1.4.0",
-    "del": "^1.1.1",
-    "envify": "^3.2.0",
-    "gulp": "^3.8.10",
+    "babel-core": "^6.3.17",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "brfs": "^1.4.1",
+    "del": "^1.2.1",
+    "envify": "^3.4.0",
+    "gulp": "^3.9.0",
     "gulp-connect": "^2.2.0",
-    "gulp-webpack": "^1.2.0",
     "jest-cli": "^0.2.2",
-    "jsx-loader": "^0.12.2",
-    "react": "^0.13.0-beta.1",
-    "transform-loader": "^0.2.1",
-    "webpack": "^1.5.3"
+    "react": "^0.13.3",
+    "webpack": "^1.12.9",
+    "webpack-stream": "^3.0.0"
   },
   "peerDependencies": {
     "react": "^0.13.0"
   },
   "dependencies": {
     "linebreak": "^0.3.0",
-    "scroller": "git://github.com/mjohnston/scroller"
+    "scroller": "git://github.com/mjohnston/scroller.git"
   }
 }

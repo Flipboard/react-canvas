@@ -1,4 +1,4 @@
-/** @jsx React.DOM */
+/** React.DOM */
 
 'use strict';
 
@@ -12,7 +12,7 @@ var ListView = ReactCanvas.ListView;
 
 var App = React.createClass({
 
-  render: function () {
+  render: function() {
     var size = this.getSize();
     return (
       <Surface top={0} left={0} width={size.width} height={size.height}>
@@ -25,9 +25,9 @@ var App = React.createClass({
     );
   },
 
-  renderItem: function (itemIndex, scrollTop) {
+  renderItem: function(itemIndex, scrollTop) {
     var article = articles[itemIndex % articles.length];
-      return (
+    return (
       <Item
         width={this.getSize().width}
         height={Item.getItemHeight()}
@@ -37,14 +37,14 @@ var App = React.createClass({
     );
   },
 
-  getSize: function () {
+  getSize: function() {
     return document.getElementById('main').getBoundingClientRect();
   },
 
   // ListView
   // ========
 
-  getListViewStyle: function () {
+  getListViewStyle: function() {
     return {
       top: 0,
       left: 0,
@@ -53,7 +53,7 @@ var App = React.createClass({
     };
   },
 
-  getNumberOfItems: function () {
+  getNumberOfItems: function() {
     return 1000;
   },
 

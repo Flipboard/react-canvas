@@ -1,4 +1,4 @@
-/** @jsx React.DOM */
+/**  React.DOM */
 
 'use strict';
 
@@ -27,7 +27,7 @@ var Page = React.createClass({
     scrollTop: React.PropTypes.number.isRequired
   },
 
-  componentWillMount: function () {
+  componentWillMount: function() {
     // Pre-compute headline/excerpt text dimensions.
     var article = this.props.article;
     var maxWidth = this.props.width - 2 * CONTENT_INSET;
@@ -37,7 +37,7 @@ var Page = React.createClass({
     this.excerptMetrics = measureText(article.excerpt, maxWidth, excerptStyle.fontFace, excerptStyle.fontSize, excerptStyle.lineHeight);
   },
 
-  render: function () {
+  render: function() {
     var groupStyle = this.getGroupStyle();
     var imageStyle = this.getImageStyle();
     var titleStyle = this.getTitleStyle();
@@ -62,7 +62,7 @@ var Page = React.createClass({
   // Styles
   // ======
 
-  getGroupStyle: function () {
+  getGroupStyle: function() {
     return {
       top: 0,
       left: 0,
@@ -71,11 +71,11 @@ var Page = React.createClass({
     };
   },
 
-  getImageHeight: function () {
+  getImageHeight: function() {
     return Math.round(this.props.height * 0.5);
   },
 
-  getImageStyle: function () {
+  getImageStyle: function() {
     return {
       top: 0,
       left: 0,
@@ -86,18 +86,20 @@ var Page = React.createClass({
     };
   },
 
-  getTitleStyle: function () {
+  getTitleStyle: function() {
     return {
       top: this.getImageHeight() + CONTENT_INSET,
       left: CONTENT_INSET,
       width: this.props.width - 2 * CONTENT_INSET,
       fontSize: 22,
       lineHeight: 30,
-      fontFace: FontFace('Avenir Next Condensed, Helvetica, sans-serif', null, {weight: 500})
+      fontFace: FontFace('Avenir Next Condensed, Helvetica, sans-serif', null, {
+        weight: 500
+      })
     };
   },
 
-  getExcerptStyle: function () {
+  getExcerptStyle: function() {
     return {
       left: CONTENT_INSET,
       width: this.props.width - 2 * CONTENT_INSET,
@@ -107,7 +109,7 @@ var Page = React.createClass({
     };
   },
 
-  getTextGroupStyle: function () {
+  getTextGroupStyle: function() {
     var imageHeight = this.getImageHeight();
     var translateY = 0;
     var alphaMultiplier = (this.props.scrollTop <= 0) ? -TEXT_ALPHA_SPEED_OUT_MULTIPLIER : TEXT_ALPHA_SPEED_IN_MULTIPLIER;
