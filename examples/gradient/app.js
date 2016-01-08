@@ -3,6 +3,7 @@
 'use strict';
 
 var React = require('react');
+var ReactDOM = require('react-dom');
 var ReactCanvas = require('react-canvas');
 
 var Gradient = ReactCanvas.Gradient;
@@ -43,4 +44,4 @@ var App = React.createClass({
 
 });
 
-React.render(<App />, document.getElementById('main'));
+ReactDOM.render(<App />, document.getElementById('main'));
