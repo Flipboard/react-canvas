@@ -38,6 +38,10 @@ React Canvas provides a set of standard React components that abstract the under
 
 **Image** is exactly what you think it is. However, it adds the ability to hide an image until it is fully loaded and optionally fade it in on load.
 
+### &lt;Carousel&gt;
+
+**Carousel** is a touch scrolling container that renders a set of elements horizontally.
+
 ### &lt;ListView&gt;
 
 **ListView** is a touch scrolling container that renders a list of elements in a column. Think of it like UITableView for the web. It leverages many of the same optimizations that make table views on iOS and list views on Android fast.

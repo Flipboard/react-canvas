@@ -4,6 +4,7 @@ module.exports = {
   watch: true,
 
   entry: {
+    'carousel': ['./examples/carousel/app.js'],
     'listview': ['./examples/listview/app.js'],
     'timeline': ['./examples/timeline/app.js'],
     'css-layout': ['./examples/css-layout/app.js']
