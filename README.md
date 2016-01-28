@@ -200,7 +200,26 @@ This will start a live reloading server on port 8080. To override the default se
 
 **A note on NODE_ENV and React**: running the examples with `NODE_ENV=production` will noticeably improve scrolling performance. This is because React skips propType validation in production mode.
 
+
+## Using with webpack
+
+The [brfs](https://github.com/substack/brfs) transform is required in order to use the project with webpack.
+
+```bash
+npm install -g brfs
+npm install --save-dev transform-loader brfs
+```
+
+Then add the [brfs](https://github.com/substack/brfs) transform to your webpack config
+
+```javascript
+module: {
+  postLoaders: [
+    { loader: "transform?brfs" }
+  ]
+}
+```
+
 ## Contributing
 
 We welcome pull requests for bug fixes, new features, and improvements to React Canvas. Contributors to the main repository must accept Flipboard's Apache-style [Individual Contributor License Agreement (CLA)](https://docs.google.com/forms/d/1gh9y6_i8xFn6pA15PqFeye19VqasuI9-bGp_e0owy74/viewform) before any changes can be merged.
-
