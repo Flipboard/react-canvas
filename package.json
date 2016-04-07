@@ -31,7 +31,7 @@
     "jest-cli": "^0.2.2",
     "jsx-loader": "^0.12.2",
     "react": "^0.13.0-beta.1",
-    "transform-loader": "^0.2.1",
+    "transform-loader": "^0.2.3",
     "webpack": "^1.5.3"
   },
   "peerDependencies": {
