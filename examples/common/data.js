@@ -48,5 +48,5 @@ module.exports = [
     title: '5 Surprising Dental Care Tips From Robert De Niro',
     excerpt: 'At once, with a quick mental leap, he linked the Thing with the flash upon Mars. The thought of the confined creature was so dreadful to him that he forgot the heat and went forward to the cylinder to help turn.  But luckily the dull radiation arrested him before he could burn his hands on the still-glowing metal.  At that he stood irresolute for a moment, then turned, scrambled out of the pit, and set off running wildly into Woking.  The time then must have been somewhere about six o\'clock. He met a waggoner and tried to make him understand, but the tale he told and his appearance were so wild--his hat had fallen off in the pit--that the man simply drove on.',
     imageUrl: 'http://lorempixel.com/360/420/cats/10/'
-  },
-];
+  }
+]
