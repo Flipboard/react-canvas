@@ -1,23 +1,21 @@
-/** @jsx React.DOM */
+import React from 'react'
+import { render } from 'react-dom'
+import ReactCanvas from 'react-canvas'
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-var ReactCanvas = require('react-canvas');
-
-var Surface = ReactCanvas.Surface;
-var Group = ReactCanvas.Group;
-var Image = ReactCanvas.Image;
-var Text = ReactCanvas.Text;
-var FontFace = ReactCanvas.FontFace;
+var Surface = ReactCanvas.Surface
+var Group = ReactCanvas.Group
+var Image = ReactCanvas.Image
+var Text = ReactCanvas.Text
+var FontFace = ReactCanvas.FontFace
 
 var App = React.createClass({
 
   componentDidMount: function () {
-    window.addEventListener('resize', this.handleResize, true);
+    window.addEventListener('resize', this.handleResize, true)
   },
 
   render: function () {
-    var size = this.getSize();
+    var size = this.getSize()
     return (
       <Surface top={0} left={0} width={size.width} height={size.height} enableCSSLayout={true}>
         <Group style={this.getPageStyle()}>
@@ -39,11 +37,11 @@ var App = React.createClass({
   // ======
 
   getSize: function () {
-    return document.getElementById('main').getBoundingClientRect();
+    return document.getElementById('main').getBoundingClientRect()
   },
 
   getPageStyle: function () {
-    var size = this.getSize();
+    var size = this.getSize()
     return {
       position: 'relative',
       padding: 14,
@@ -81,7 +79,7 @@ var App = React.createClass({
       marginBottom: 10,
       color: '#333',
       textAlign: 'center'
-    };
+    }
   },
 
   getExcerptStyle: function () {
@@ -92,16 +90,16 @@ var App = React.createClass({
       marginTop: 15,
       flex: 1,
       color: '#333'
-    };
+    }
   },
 
   // Events
   // ======
 
   handleResize: function () {
-    this.forceUpdate();
+    this.forceUpdate()
   }
 
-});
+})
 
-ReactDOM.render(<App />, document.getElementById('main'));
+render(<App />, document.getElementById('main'))

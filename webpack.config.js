@@ -17,7 +17,15 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'jsx-loader!transform/cacheable?envify' },
+      {
+    test: /\.js?$/,
+    exclude: /(node_modules)/,
+    loader: 'babel',
+    query: {
+      presets: ['es2015', "react"]
+    } }
     ],
+
     postLoaders: [
       { loader: "transform?brfs" }
     ]
@@ -29,4 +37,4 @@ module.exports = {
       'react-canvas': 'lib/ReactCanvas.js'
     }
   }
-};
+}

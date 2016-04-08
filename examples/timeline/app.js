@@ -1,20 +1,18 @@
-/** @jsx React.DOM */
+'use strict'
 
-'use strict';
+import React from 'react'
+import { render } from 'react-dom'
+import ReactCanvas from 'react-canvas'
+import Page from './components/Page'
+import articles from '../common/data'
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-var ReactCanvas = require('react-canvas');
-var Page = require('./components/Page');
-var articles = require('../common/data');
-
-var Surface = ReactCanvas.Surface;
-var ListView = ReactCanvas.ListView;
+var Surface = ReactCanvas.Surface
+var ListView = ReactCanvas.ListView
 
 var App = React.createClass({
 
   render: function () {
-    var size = this.getSize();
+    var size = this.getSize()
     return (
       <Surface top={0} left={0} width={size.width} height={size.height}>
         <ListView
@@ -30,9 +28,9 @@ var App = React.createClass({
   },
 
   renderPage: function (pageIndex, scrollTop) {
-    var size = this.getSize();
-    var article = articles[pageIndex % articles.length];
-    var pageScrollTop = pageIndex * this.getPageHeight() - scrollTop;
+    var size = this.getSize()
+    var article = articles[pageIndex % articles.length]
+    var pageScrollTop = pageIndex * this.getPageHeight() - scrollTop
     return (
       <Page
         width={size.width}
@@ -44,20 +42,20 @@ var App = React.createClass({
   },
 
   getSize: function () {
-    return document.getElementById('main').getBoundingClientRect();
+    return document.getElementById('main').getBoundingClientRect()
   },
 
   // ListView
   // ========
 
   getListViewStyle: function () {
-    var size = this.getSize();
+    var size = this.getSize()
     return {
       top: 0,
       left: 0,
       width: size.width,
       height: size.height
-    };
+    }
   },
 
   getNumberOfPages: function () {
@@ -65,9 +63,9 @@ var App = React.createClass({
   },
 
   getPageHeight: function () {
-    return this.getSize().height;
+    return this.getSize().height
   }
 
-});
+})
 
-ReactDOM.render(<App />, document.getElementById('main'));
+render(<App />, document.getElementById('main'))
