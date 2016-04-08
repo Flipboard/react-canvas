@@ -1,13 +1,11 @@
-/** @jsx React.DOM */
+'use strict'
 
-'use strict';
+import React from 'react'
+import ReactCanvas from 'react-canvas'
 
-var React = require('react');
-var ReactCanvas = require('react-canvas');
-
-var Group = ReactCanvas.Group;
-var Image = ReactCanvas.Image;
-var Text = ReactCanvas.Text;
+var Group = ReactCanvas.Group
+var Image = ReactCanvas.Image
+var Text = ReactCanvas.Text
 
 var Item = React.createClass({
 
@@ -21,7 +19,7 @@ var Item = React.createClass({
 
   statics: {
     getItemHeight: function () {
-      return 80;
+      return 80
     }
   },
 
@@ -39,7 +37,7 @@ var Item = React.createClass({
       width: this.props.width,
       height: Item.getItemHeight(),
       backgroundColor: (this.props.itemIndex % 2) ? '#eee' : '#a5d2ee'
-    };
+    }
   },
 
   getImageStyle: function () {
@@ -51,7 +49,7 @@ var Item = React.createClass({
       backgroundColor: '#ddd',
       borderColor: '#999',
       borderWidth: 1
-    };
+    }
   },
 
   getTitleStyle: function () {
@@ -62,9 +60,9 @@ var Item = React.createClass({
       height: 18,
       fontSize: 14,
       lineHeight: 18
-    };
+    }
   }
 
-});
+})
 
-module.exports = Item;
+module.exports = Item

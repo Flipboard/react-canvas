@@ -1,2 +1,5 @@
 build
 node_modules
+es6
+umd
+npm-debug.log
