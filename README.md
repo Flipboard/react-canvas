@@ -6,13 +6,12 @@ React Canvas adds the ability for React components to render to `<canvas>` rathe
 
 This project is a work-in-progress. Though much of the code is in production on flipboard.com, the React canvas bindings are relatively new and the API is subject to change.
 
-## Motivation
+## 动机
+通过对构建移动设备页面的一段很长时间的总结，我们发现web app想对于原生app，用户体验上感觉很慢的原因是因为DOM元素的渲染；CSS animations and transitions是使页面上的动画最优雅的最快的途径，但是依然有很多限制；React Canvas的出现引导了一个事实就是最现代化的浏览器已经开始加快对canvas的支持；
 
-Having a long history of building interfaces geared toward mobile devices, we found that the reason mobile web apps feel slow when compared to native apps is the DOM. CSS animations and transitions are the fastest path to smooth animations on the web, but they have several limitations. React Canvas leverages the fact that most modern mobile browsers now have hardware accelerated canvas.
+虽然已经存在多种将canvas绑定到react上的尝试，但它们更多地集中在可视化和游戏上面，react canvas与它们不同的地方就是将自己的注意力放在用户界面上，它为canvas提供了一种细节上的成就；
 
-While there have been other attempts to bind canvas drawing APIs to React, they are more focused on visualizations and games. Where React Canvas differs is in the focus on building application user interfaces. The fact that it renders to canvas is an implementation detail.
-
-React Canvas brings some of the APIs web developers are familiar with and blends them with a high performance drawing engine.
+React canvas 带来了一些web开发者熟悉的API，并且通过一个高性能的绘图引擎协调它们；
 
 ## React Canvas Components
 
