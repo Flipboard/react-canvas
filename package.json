@@ -41,7 +41,6 @@
   "dependencies": {
     "fbjs": "^0.4.0",
     "linebreak": "^0.3.0",
-    "object-assign": "^4.0.1",
     "scroller": "git://github.com/mjohnston/scroller"
   }
 }
