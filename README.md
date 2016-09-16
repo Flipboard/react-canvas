@@ -14,6 +14,12 @@ While there have been other attempts to bind canvas drawing APIs to React, they 
 
 React Canvas brings some of the APIs web developers are familiar with and blends them with a high performance drawing engine.
 
+## Installation
+
+React Canvas is available through npm:
+
+```npm install react-canvas```
+
 ## React Canvas Components
 
 React Canvas provides a set of standard React components that abstract the underlying rendering implementation.
