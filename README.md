@@ -48,13 +48,13 @@ React Canvas provides a set of standard React components that abstract the under
 
 ### &lt;Gradient&gt;
 
-**Gradient** can be used to set the background of a group or surface.
+**Gradient** can be used to set the background of a group or surface. 
 ```javascript
   render() {
     ...
     return (
       <Group style={this.getStyle()}>
-        <Gradient style={this.getGradientStyle()}
+        <Gradient style={this.getGradientStyle()} 
                   colorStops={this.getGradientColors()} />
       </Group>
     );
