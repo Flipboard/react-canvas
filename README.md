@@ -65,7 +65,7 @@ React Canvas provides a set of standard React components that abstract the under
       { color: "#000", position: 1 }
     ]
   }
-```
+``` 
 
 ### &lt;ListView&gt;
 
