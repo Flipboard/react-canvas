@@ -30,13 +30,13 @@
     "gulp-webpack": "^1.2.0",
     "jest-cli": "^0.2.2",
     "jsx-loader": "^0.12.2",
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
     "transform-loader": "^0.2.1",
     "webpack": "^1.5.3"
   },
   "peerDependencies": {
-    "react": "^0.14.0"
+    "react": "^15.0.0"
   },
   "dependencies": {
     "fbjs": "^0.4.0",
