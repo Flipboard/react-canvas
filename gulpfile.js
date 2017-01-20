@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var del = require('del');
 var connect = require('gulp-connect');
-var webpack = require('gulp-webpack');
+var webpack = require('webpack-stream');
 var webpackConfig = require('./webpack.config.js');
 
 var port = process.env.PORT || 8080;
