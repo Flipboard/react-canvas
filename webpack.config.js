@@ -22,7 +22,7 @@ module.exports = {
       { loader: "transform?brfs" }
     ]
   },
-
+  devtool: ['source-map'],
   resolve: {
     root: __dirname,
     alias: {
