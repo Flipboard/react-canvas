@@ -6,6 +6,8 @@ React Canvas adds the ability for React components to render to `<canvas>` rathe
 
 This project is a work-in-progress. Though much of the code is in production on flipboard.com, the React canvas bindings are relatively new and the API is subject to change.
 
+> ⚠ Currently this project doesn't work with react v15 (and above)
+
 ## Motivation
 
 Having a long history of building interfaces geared toward mobile devices, we found that the reason mobile web apps feel slow when compared to native apps is the DOM. CSS animations and transitions are the fastest path to smooth animations on the web, but they have several limitations. React Canvas leverages the fact that most modern mobile browsers now have hardware accelerated canvas.
