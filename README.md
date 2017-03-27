@@ -1,6 +1,6 @@
 # react-canvas
 
-[Introductory blog post](http://engineering.flipboard.com/2015/02/mobile-web/)
+[Introductory blog post](http://engineering.flipboard.com/2015/02/mobile-web)
 
 React Canvas adds the ability for React components to render to `<canvas>` rather than DOM.
 
