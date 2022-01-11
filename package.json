@@ -43,6 +43,6 @@
   "dependencies": {
     "fbjs": "^0.8.8",
     "linebreak": "^0.3.0",
-    "scroller": "git://github.com/mjohnston/scroller"
+    "scroller": "^0.0.3"
   }
 }
