@@ -1,4 +1,5 @@
 # react-canvas
+[![kandi Featured](https://kandi.openweaver.com/badges/featured.svg)](https://kandi.openweaver.com/javascript/Flipboard/react-canvas)
 
 [Introductory blog post](http://engineering.flipboard.com/2015/02/mobile-web)
 
